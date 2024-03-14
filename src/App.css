@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  @apply box-border m-0 p-0;
+}
+
+body {
+  @apply  font-sans bg-[#1f1f47] ;
+}
+
+.scroll-to-top {
+  @apply fixed hidden bg-[#007bff] text-white cursor-pointer px-[15px] py-2.5 rounded-[5px] border-[none] right-5 bottom-5;
+}
+.scroll-to-top.visible {
+  @apply block;
+}
+
+.header {
+  @apply bg-[#363b4b84];
+}
+
+.sticky__header {
+  @apply w-full h-20 leading-[80px] sticky z-[99999px] shadow-[3px_3px_-8px_3px_#ddd] left-0 top-0 ;
+}
+
+.wave {
+  @apply origin-[70%_70%] inline-block;
+  animation-name: wave-animation;
+  animation-duration: 2.1s;
+  animation-iteration-count: infinite;
+}
+
+.Typewriter__wrapper {
+  @apply text-[2.2em] text-[#be6adf] font-semibold;
+}
+
+.Typewriter__cursor {
+  @apply text-[2.4em] text-[#b562d6];
+}
+
+.divider {
+  @apply my-5 border-t-white border-t border-solid;
+}
+
+.tech__icons {
+  @apply text-[4.5em] opacity-[0.93] align-middle text-center table shadow-[4px_5px_4px_3px_rgba(89,4,168,0.137)] overflow-hidden transition-all duration-[0.4s] ease-[ease] delay-[0s] m-[15px] p-2.5 rounded-[5px] border-[1.7px] border-solid border-[rgba(89,91,214,0.64)];
+}
+
+.tech__icons:hover {
+  @apply overflow-hidden border-[2.2px] border-solid border-[rgba(77,100,230,0.88)] scale-105;
+}
+.tech__icon-images {
+  @apply leading-[1.6] p-5;
+}
+.tech__icon-row {
+  @apply flex flex-wrap justify-center mx-[-15px];
+}
+
+.tech__icon-col {
+  @apply px-[15px] mb-[30px];
+}
+
+/* HTML */
+.html__hover:hover {
+  @apply text-[#e34c26];
+}
+
+/* CSS */
+.css__hover:hover {
+  @apply text-[#264de4];
+}
+
+/* JavaScript */
+.js__hover:hover {
+  @apply text-[#f0db4f];
+}
+
+/* TailwindCSS */
+.tailwind__hover:hover {
+  @apply text-[#38bdf8];
+}
+
+/* Bootstrap */
+.bootstrap__hover:hover {
+  @apply text-[#7952b3];
+}
+
+/* NodeJS */
+.nodejs__hover:hover {
+  @apply text-[#83cd29];
+}
+
+/* ReactJS */
+.react__hover:hover {
+  @apply text-[#61dafb];
+}
+
+/* MongoDB */
+.mongodb__hover:hover {
+  @apply text-[#47a248];
+}
+
+/* Git */
+.git__hover:hover {
+  @apply text-[#f34f29];
+}
+
+/* C++ */
+.cpp__hover:hover {
+  @apply text-[#659ad3];
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  } 
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .navigation {
+    @apply w-full h-full fixed z-[100] hidden left-0 top-0;
+    background: #00000084;
+  }
+
+  .menu {
+    @apply w-60 h-full absolute z-[200] flex-col justify-center items-center leading-[30px] right-0 top-0;
+    background: #00000084;
+  }
+
+  .show__menu {
+    @apply block;
+  }
+
+  .Typewriter__wrapper {
+    @apply text-[1.4em] font-medium ;
+  }
+
+  .Typewriter__cursor {
+    @apply hidden;
+  }
+
+  .tech__icons {
+    @apply m-2.5;
+  }
+}
