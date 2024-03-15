@@ -203,3 +203,9 @@ body {
   }
 }
 
+@media (min-width: 768px) {
+  .sticky__header {
+    @apply backdrop-blur-[15px];
+  }
+}
+
