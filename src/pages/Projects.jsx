@@ -49,7 +49,7 @@ const Projects = () => {
     <div className="project__heading pb-5">My Projects</div>
     <div className='repo__container mt-[30px]'>
       {repos.map((repo) => (
-        <div key={repo.id} className="introduce flex items-center gap-2 text-white ">
+        <div key={repo.id} className="introduce flex items-center gap-2 text-white  ">
           <div className='flex items-center'>
             <span>
               <i className='bx bxl-github' ></i>
@@ -74,7 +74,9 @@ const Projects = () => {
       ))}
     </div>
     <div className="divider mt-[50px]"></div>
+    <div className="github__section">
     <Github />
+    </div>
     </>
   );
 };

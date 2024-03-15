@@ -28,6 +28,7 @@ const Home = () => {
                 <div className='mt-[30px] p-[50] text-left'>
                   <Type />
                 </div>
+                <div className="mr-[5%]">
                 <p className='text__para'>
                     I'm <strong className='text__para--bold'>Ngo Minh Khue</strong>
                 </p>
@@ -43,12 +44,13 @@ const Home = () => {
                 <p className='text__para mt-[30px]'>
                   Meanwhile, I am also fond of security issues on the web, an area that I think is very important but sometimes underestimated. I hope to contribute to the IT community with products that ensure user information security.                
                 </p>
+                </div>
                 <a 
                   href='https://drive.usercontent.google.com/download?id=17pg9hmANmFM5YUhohMHisCgiYSWD8aNt&export=download&authuser=0'
                   download='CV.pdf'
                   type='application/pdf'
                   rel='noopener noreferrer' >
-                  <button className='btn '><span><i className='bx bxs-download' ></i></span> Download My CV</button>
+                  <button className='btn'><span><i className='bx bxs-download' ></i></span> Download My CV</button>
                 </a>
               </div>
             </div>

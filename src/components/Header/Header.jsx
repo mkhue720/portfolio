@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useContext, useState } from 'react';
+import React, { useRef, useEffect } from 'react';
 import logo from '../../assets/img/logo.png';
 import { NavLink } from 'react-router-dom';
 import { RiHome2Line, RiBriefcaseLine, RiPhoneFill } from 'react-icons/ri';
@@ -62,11 +62,6 @@ const Header = () => {
                   </NavLink>
                 </li>)
               }
-          <div className='flex items-center gap-4'>
-            <span className='md:hidden' onClick={toggleMenu}>
-              <BiMenu className = 'w-6 h-6 cursor-pointer' />
-            </span>
-        </div>
             </ul>
           </div>
               {/* NAV */}
