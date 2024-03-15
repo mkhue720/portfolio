@@ -16,7 +16,7 @@ body {
 }
 
 .header {
-  @apply bg-[#363b4b84];
+  @apply bg-[#363b4b84] relative z-20;
 }
 
 .sticky__header {
@@ -49,9 +49,7 @@ body {
 .tech__icons:hover {
   @apply overflow-hidden border-[2.2px] border-solid border-[rgba(77,100,230,0.88)] scale-105;
 }
-.tech__icon-images {
-  @apply leading-[1.6] p-5;
-}
+
 .tech__icon-row {
   @apply flex flex-wrap justify-center mx-[-15px];
 }
@@ -110,6 +108,21 @@ body {
   @apply text-[#659ad3];
 }
 
+.repo__container {
+  @apply grid grid-cols-[repeat(5,1fr)] gap-5 px-5;
+}
+.introduce {
+  @apply bg-gray-800 shadow-[0_4px_6px_rgba(0,0,0,0.1)] flex-col items-start p-5 rounded-lg overflow-hidden border-[2.2px] border-solid border-[rgba(77,100,230,0.88)];
+}
+
+.introduce:hover {
+  @apply scale-105;
+}
+
+.project__heading {
+  @apply text-white text-[2.3em] font-medium pt-2.5 text-center;
+}
+
 @keyframes wave-animation {
   0% {
     transform: rotate(0deg);
@@ -163,5 +176,23 @@ body {
 
   .tech__icons {
     @apply m-2.5;
+  }
+
+  .tech__icon-row {
+    @apply grid grid-cols-3 gap-4;
+  }
+
+  .tech__icon-col {
+    @apply w-full;
+  }
+
+  .repo__container {
+    @apply grid-cols-[repeat(2,1fr)];
+  }
+}
+
+@media (min-width: 768px) {
+  .sticky__header {
+    @apply backdrop-blur-[15px];
   }
 }

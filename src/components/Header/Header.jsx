@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useContext, useState } from 'react';
 import logo from '../../assets/img/logo.png';
 import { NavLink } from 'react-router-dom';
-import { RiHome2Line, RiArticleLine, RiBriefcaseLine, RiPhoneFill, RiRobot2Line } from 'react-icons/ri';
+import { RiHome2Line, RiBriefcaseLine, RiPhoneFill } from 'react-icons/ri';
 import { BiMenu } from 'react-icons/bi';
 const navLinks = [
   {
@@ -10,19 +10,9 @@ const navLinks = [
     icon: <RiHome2Line />
   },
   {
-    path: '/blog',
-    display: 'Blog',
-    icon: <RiArticleLine />
-  },
-  {
     path: '/projects',
     display: 'Projects',
     icon: <RiBriefcaseLine />
-  },
-  {
-    path: '/chatbot',
-    display: 'ChatBot',
-    icon: <RiRobot2Line  />
   },
   {
     path: '/contact',

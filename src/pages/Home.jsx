@@ -58,7 +58,9 @@ const Home = () => {
     <section>
       <div className='container'>
         <div className='heading text-center'>SKILLS</div>
+        <div className="">
         <Techstack />
+        </div>
       </div>
     </section>
     </>

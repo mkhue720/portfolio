@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
-import HashLoader from 'react-spinners/HashLoader.js';
+import Loading from '../components/Loader/Loading';
+import Error from '../components/Error/Error';
+import Github from '../components/Github';
 
 const Projects = () => {
   const [repos, setRepos] = useState([]);
@@ -29,14 +31,12 @@ const Projects = () => {
 
   if (loading) {
     return (
-      <div className="flex justify-center align-middle h-[100vh]">
-        <HashLoader />
-      </div>
+      <Loading />
     );
   }
 
   if (error) {
-    return <p>Error: {error}</p>;
+    <Error />
   }
 
   return (
@@ -46,10 +46,11 @@ const Projects = () => {
       <title>Projects | NMK</title>
     </Helmet>
     </HelmetProvider>
-    <div className='repo-container'>
+    <div className="project__heading pb-5">My Projects</div>
+    <div className='repo__container mt-[30px]'>
       {repos.map((repo) => (
-        <div key={repo.id} className="introduce flex items-center gap-2 ">
-          <div style={{ display: 'flex', alignItems: 'center' }}>
+        <div key={repo.id} className="introduce flex items-center gap-2 text-white ">
+          <div className='flex items-center'>
             <span>
               <i className='bx bxl-github' ></i>
             </span>
@@ -72,6 +73,8 @@ const Projects = () => {
         </div>
       ))}
     </div>
+    <div className="divider mt-[50px]"></div>
+    <Github />
     </>
   );
 };
