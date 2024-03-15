@@ -43,7 +43,7 @@ body {
 }
 
 .tech__icons {
-  @apply text-[4.5em] opacity-[0.93] align-middle text-center table shadow-[4px_5px_4px_3px_rgba(89,4,168,0.137)] overflow-hidden transition-all duration-[0.4s] ease-[ease] delay-[0s] m-[15px] p-2.5 rounded-[5px] border-[1.7px] border-solid border-[rgba(89,91,214,0.64)];
+  @apply text-[7em] opacity-[0.93] align-middle text-center table shadow-[4px_5px_4px_3px_rgba(89,4,168,0.137)] overflow-hidden transition-all duration-[0.4s] ease-[ease] delay-[0s] m-[15px] p-2.5 rounded-[5px] border-[1.7px] border-solid border-[rgba(89,91,214,0.64)];
 }
 
 .tech__icons:hover {
@@ -51,7 +51,7 @@ body {
 }
 
 .tech__icon-row {
-  @apply flex flex-wrap justify-center mx-[-15px];
+  @apply grid grid-cols-5 mx-[-15px];
 }
 
 .tech__icon-col {
@@ -179,7 +179,7 @@ body {
   }
 
   .tech__icon-row {
-    @apply grid grid-cols-3 gap-4;
+    @apply grid grid-cols-4 gap-4;
   }
 
   .tech__icon-col {

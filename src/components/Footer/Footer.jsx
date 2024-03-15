@@ -13,15 +13,15 @@ const socialLinks = [
     icon: <AiFillYoutube className='group-hover:text-white w-4 h-5' />,
   },
   {
-    path: 'https://www.youtube.com/@raikichannel',
+    path: 'https://github.com/mkhue720',
     icon: <AiFillGithub className='group-hover:text-white w-4 h-5' />,
   },
   {
-    path: 'https://www.youtube.com/@raikichannel',
+    path: 'https://www.instagram.com/mkhue720/',
     icon: <AiOutlineInstagram className='group-hover:text-white w-4 h-5' />,
   },
   {
-    path: 'https://www.youtube.com/@raikichannel',
+    path: 'https://www.linkedin.com/in/minh-khu%C3%AA-330b3319a/',
     icon: <RiLinkedinFill className='group-hover:text-white w-4 h-5' />,
   },
 ]
@@ -32,18 +32,17 @@ const Footer = () => {
             <div className="container mx-auto md:flex md:justify-center">
                 <div className="flex justify-center flex-col md:flex-row flex-wrap gap-[30px] items-center">
                     <div>
-                        <div className="flex flex-col items-center mt-4">
-                                <div className='flex items-center gap-3 mt-4 justify-center'>
-                                        {socialLinks.map((link, index) => <Link to={link.path} key={index} className='w-9 h-9 border border-solid border-[#181A1E] rounded-full flex items-center justify-center group hover:bg-primaryColor hover:border-none'>
-                                        {link.icon}
-                                </Link>)}
-                                </div>
+                      <div className="flex flex-col items-center mt-4">
+                        <div className='flex items-center gap-3 mt-4 justify-center'>
+                          {socialLinks.map((link, index) => <Link to={link.path} key={index} className='w-9 h-9 border border-solid border-[#181A1E] rounded-full flex items-center justify-center group hover:bg-primaryColor hover:border-none'>
+                          {link.icon}
+                        </Link>)}
                         </div>
-                        
+                      </div>  
                     <p className='text-[16px] leading-7 font-[400] text-white mt-4 text-center'>
-                                        Copyright © {year} developed by NMK all right reserved.
+                      Copyright © {year} developed by NMK all right reserved.
                     </p>
-                    </div> 
+                  </div> 
                 </div>
             </div>
         </footer>

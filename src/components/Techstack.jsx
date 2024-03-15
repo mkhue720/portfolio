@@ -10,7 +10,8 @@ import {
 
 function Techstack() {
   return (
-    <div className="tech__icon-row">
+    <div className="grid place-items-center">
+        <div className="tech__icon-row">
         <div className="tech__icon-col lg:w-1/5">
             <div className="tech__icons cpp__hover">
             <BiLogoCPlusPlus />
@@ -61,6 +62,7 @@ function Techstack() {
             <DiGit />
             </div>
         </div>
+    </div>
     </div>
   );
 }
