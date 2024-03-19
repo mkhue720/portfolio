@@ -46,7 +46,7 @@ const Home = () => {
                 </p>
                 </div>
                 <a 
-                  href='https://drive.usercontent.google.com/download?id=17pg9hmANmFM5YUhohMHisCgiYSWD8aNt&export=download&authuser=0'
+                  href='https://drive.usercontent.google.com/download?id=1LQ35oebDLe-1B2Qec7SB9yAo4ZV9y_eg&export=download&authuser=0%27'
                   download='CV.pdf'
                   type='application/pdf'
                   rel='noopener noreferrer' >
